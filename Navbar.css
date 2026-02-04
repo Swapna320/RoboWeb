@@ -1,0 +1,72 @@
+/* ========================
+   Navbar Container
+======================== */
+.navbar {
+  width: 100%;
+  padding: 18px 40px;   /* reduced side padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  box-sizing: border-box; /* 🔑 THIS FIXES OVERFLOW */
+}
+
+/* ========================
+   Logo
+======================== */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ========================
+   Navigation Links
+======================== */
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  margin-left: 24px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #d0d0d0;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+/* ========================
+   Active Link
+======================== */
+.links a.active {
+  color: #7f5cff;
+  border-bottom: 2px solid #7f5cff;
+  padding-bottom: 4px;
+}
+
+/* ========================
+   Mobile Fix
+======================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .links a {
+    margin-left: 14px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(
+    circle at top right,
+    #2b1055,
+    #000000 70%
+  );
+  color: #ffffff;
+}
+
+.page,
+.contact-page,
+.services-page {
+  background: transparent;
+  box-shadow: none;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* prevents accidental horizontal scroll */
+}
